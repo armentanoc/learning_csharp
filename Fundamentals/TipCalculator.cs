@@ -20,7 +20,7 @@ namespace Fundamentals
                 run();
             }
 
-            Console.WriteLine($"\nCALCULADORA DE GORJETA\nGorjeta: R${Math.Round(tip, 2)}" +
+            Console.WriteLine($"\nGorjeta: R${Math.Round(tip, 2)}" +
                 $"\nTotal da Conta: R${Math.Round((bill + tip), 2)}");
         }
 

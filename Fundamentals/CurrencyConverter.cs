@@ -11,7 +11,7 @@ namespace Fundamentals
             float valueReais = Receive.Float("Informe o valor em reais (ex.: 10.50)");
             (float conversionRate, string prefix) = whichCurrency(valueReais);
             float convertedValue = valueReais / conversionRate;
-            Console.WriteLine($"\nCONVERSOR DE MOEDAS\nValor original: BRL {valueReais.ToString("F2")}" +
+            Console.WriteLine($"Valor original: BRL {valueReais.ToString("F2")}" +
                 $"\nValor convertido: {prefix} {convertedValue.ToString("F2")} ");
         }
 
