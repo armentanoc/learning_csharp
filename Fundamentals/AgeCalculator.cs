@@ -7,37 +7,45 @@ namespace Fundamentals
     {
         public static void run()
         {
-            int
-                currentYear = Receive.Int("Informe o ano atual:"),
-                birthYear = Receive.Int("Informe o seu ano de nascimento:"),
-                age = currentYear - birthYear;
+            int currentYear, birthYear, age;
 
+            currentYear = getValidYear("Informe o ano atual: ");
+            birthYear = getValidYear(" \nInforme o seu ano de nascimento: ");
+ 
             bool birthdayThisYear = haveYouAlreadyHadYourBirthday();
-            age = (birthdayThisYear == false) ? age - 1 : age;
-            Console.WriteLine($"\nCALCULADORA DE IDADE\nVocê tem {age} anos.");
+            age = birthdayThisYear ? currentYear - birthYear : currentYear - birthYear - 1;
+            Console.WriteLine($"\nVocê tem {age} anos.");
+        }
+
+        private static int getValidYear(string message)
+        {
+            while (true)
+            {
+                Console.Write(message);
+                if (int.TryParse(Console.ReadLine(), out int year) && year <= DateTime.Now.Year)
+                {
+                    return year;
+                }
+                Console.WriteLine("\nAno inválido. Tente novamente.\n");
+            }
         }
 
         public static bool haveYouAlreadyHadYourBirthday()
         {
-            Console.WriteLine($"Você já fez aniversário esse ano? (sim/não)");
+            while (true)
+            {
+                Console.Write("\nVocê já fez aniversário este ano? (sim/não): ");
+                string answer = Console.ReadLine().ToLower();
 
-            string
-                answer = Console.ReadLine().ToLower(),
-                no = @"^não|nao",
-                yes = @"^sim";
-
-            if (Regex.IsMatch(answer, yes))
-            {
-                return true;
-            }
-            else if (Regex.IsMatch(answer, no))
-            {
-                return false;
-            }
-            else
-            {
-                Console.WriteLine("Erro. A resposta fornecida deve ser sim ou não.");
-                return haveYouAlreadyHadYourBirthday();
+                if (Regex.IsMatch(answer, @"^(sim|s)$"))
+                {
+                    return true;
+                }
+                else if (Regex.IsMatch(answer, @"^(não|nao|n)$"))
+                {
+                    return false;
+                }
+                Console.WriteLine("\nResposta inválida. Por favor, responda com 'sim' ou 'não'.");
             }
         }
     }

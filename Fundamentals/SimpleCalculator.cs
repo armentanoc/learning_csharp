@@ -15,11 +15,12 @@ namespace Fundamentals
                 multiplication = number1 * number2,
                 division = number1 / number2;
 
-            Console.WriteLine($"\nCALCULADORA\n" +
+            Console.WriteLine(
                 $"\nSoma: {sum}" +
                 $"\nSubtração: {subtraction}" +
                 $"\nMultiplicação: {multiplication}" +
-                $"\nDivisão: {division}");
+                $"\nDivisão: {division}"
+                );
         }
     }
 }
