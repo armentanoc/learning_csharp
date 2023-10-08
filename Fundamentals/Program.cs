@@ -19,7 +19,7 @@ namespace Fundamentals
                 "\n(7) Sales Management System" +
                 "\n(8) Review Student Scores" +
                 "\n(9) Choose Courses" +
-                "\n(10) Palindromes - TO DO" +
+                "\n(10) Palindromes" +
                 "\n(11) Pay Raise - TO DO" +
                 "\n(0) Sair");
 

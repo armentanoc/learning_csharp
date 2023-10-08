@@ -5,7 +5,19 @@ namespace Fundamentals
     {
         public static void run()
         {
-            Console.WriteLine("WIP");
+            Console.WriteLine("Digite uma palavra para verificar se é um palíndromo:");
+            string word = Console.ReadLine().ToLower();
+
+            string reversedWord = new string(word.ToCharArray().Reverse().ToArray());
+
+            if (word.Equals(reversedWord, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine($"{word} é um palíndromo!");
+            }
+            else
+            {
+                Console.WriteLine($"{word} NÃO é um palíndromo.");
+            }
         }
     }
 }
