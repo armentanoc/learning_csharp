@@ -21,8 +21,8 @@ namespace Fundamentals
                 "\n(9) Choose Courses" +
                 "\n(10) Palindromes" +
                 "\n(11) Pay Raise" +
-                "\n(12) Manipulating Simple Arrays" +
-                "\n(13) Option 13" +
+                "\n(12) Array Sum" +
+                "\n(13) Array Functions" +
                 "\n(14) Option 14" +
                 "\n(15) Option 15" +
                 "\n(0) Sair");
@@ -90,12 +90,13 @@ namespace Fundamentals
                         Main(args);
                         break;
                     case 12:
-                        Console.WriteLine("MANIPULANDO ARRAYS SIMPLES\n");
-                        ManipulatingSimpleArray.run();
+                        Console.WriteLine("SOMA DE ARRAYS\n");
+                        ArraySum.run();
                         Main(args);
                         break;
                     case 13:
-                        Console.WriteLine("OPÇÃO 13 - Implement your code here\n");
+                        Console.WriteLine("FUNÇÕES DE ARRAYS\n");
+                        ArrayFunctions.run();
                         Main(args);
                         break;
                     case 14:
