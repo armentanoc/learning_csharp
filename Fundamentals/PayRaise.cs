@@ -5,7 +5,51 @@ namespace Fundamentals
     {
         public static void run()
         {
-            Console.WriteLine("WIP");
+            double currentSalary = 0;
+            bool validSalary = false;
+
+            while (!validSalary)
+            {
+                Console.Write("Digite o salário do colaborador: ");
+
+                if (double.TryParse(Console.ReadLine(), out currentSalary) && currentSalary >= 0)
+                {
+                    validSalary = true;
+                }
+                else
+                {
+                    Console.WriteLine("Valor de salário inválido. Por favor, digite um valor válido.");
+                }
+            }
+
+            double raisePercentage = 0;
+            double raiseAmount = 0;
+
+            if (currentSalary <= 280)
+            {
+                raisePercentage = 20;
+            }
+            else if (currentSalary <= 700)
+            {
+                raisePercentage = 15;
+            }
+            else if (currentSalary <= 1500)
+            {
+                raisePercentage = 10;
+            }
+            else
+            {
+                raisePercentage = 5;
+            }
+
+            raiseAmount = (currentSalary * raisePercentage) / 100;
+            double newSalary = currentSalary + raiseAmount;
+
+            Console.WriteLine($"\nSalário antes do reajuste: {currentSalary.ToString("C")}");
+            Console.WriteLine($"Percentual de aumento aplicado: {raisePercentage}%");
+            Console.WriteLine($"Valor do aumento: {raiseAmount.ToString("C")}");
+            Console.WriteLine($"Novo salário após o aumento: {newSalary.ToString("C")}");
+
         }
     }
 }

@@ -20,7 +20,11 @@ namespace Fundamentals
                 "\n(8) Review Student Scores" +
                 "\n(9) Choose Courses" +
                 "\n(10) Palindromes" +
-                "\n(11) Pay Raise - TO DO" +
+                "\n(11) Pay Raise" +
+                "\n(12) Manipulating Simple Arrays" +
+                "\n(13) Option 13" +
+                "\n(14) Option 14" +
+                "\n(15) Option 15" +
                 "\n(0) Sair");
 
             try
@@ -83,6 +87,23 @@ namespace Fundamentals
                     case 11:
                         Console.WriteLine("ANÁLISE DE AUMENTO DE SALÁRIO\n");
                         PayRaise.run();
+                        Main(args);
+                        break;
+                    case 12:
+                        Console.WriteLine("MANIPULANDO ARRAYS SIMPLES\n");
+                        ManipulatingSimpleArray.run();
+                        Main(args);
+                        break;
+                    case 13:
+                        Console.WriteLine("OPÇÃO 13 - Implement your code here\n");
+                        Main(args);
+                        break;
+                    case 14:
+                        Console.WriteLine("OPÇÃO 14 - Implement your code here\n");
+                        Main(args);
+                        break;
+                    case 15:
+                        Console.WriteLine("OPÇÃO 15 - Implement your code here\n");
                         Main(args);
                         break;
                     case 0:
