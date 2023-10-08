@@ -17,7 +17,7 @@ namespace Fundamentals
                 "\n(5) Fish Regulation" +
                 "\n(6) Swimmer Categorization" +
                 "\n(7) Sales Management System" +
-                "\n(8) Review Student Scores - TO DO" +
+                "\n(8) Review Student Scores" +
                 "\n(9) Choose Courses - TO DO" +
                 "\n(10) Palindromes - TO DO" +
                 "\n(11) Pay Raise - TO DO" +
