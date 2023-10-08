@@ -24,7 +24,7 @@ namespace Fundamentals
                 "\n(12) Array Sum" +
                 "\n(13) Array Functions" +
                 "\n(14) Sum 1 To 100 Using Array" +
-                "\n(15) Option 15" +
+                "\n(15) Dynamic numbers" +
                 "\n(0) Sair");
 
             try
@@ -105,7 +105,8 @@ namespace Fundamentals
                         Main(args);
                         break;
                     case 15:
-                        Console.WriteLine("OPÇÃO 15 - Implement your code here\n");
+                        Console.WriteLine("DIGITE OS NÚMEROS QUE DESEJA E VÁ PRESSIONANDO ENTER\n");
+                        DynamicNumbers.run();
                         Main(args);
                         break;
                     case 0:
