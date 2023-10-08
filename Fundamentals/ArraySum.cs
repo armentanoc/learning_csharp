@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Fundamentals
 {
-    public class ManipulatingSimpleArray
+    public class ArraySum
     {
         public static void run()
         {
