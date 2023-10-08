@@ -18,7 +18,7 @@ namespace Fundamentals
                 "\n(6) Swimmer Categorization" +
                 "\n(7) Sales Management System" +
                 "\n(8) Review Student Scores" +
-                "\n(9) Choose Courses - TO DO" +
+                "\n(9) Choose Courses" +
                 "\n(10) Palindromes - TO DO" +
                 "\n(11) Pay Raise - TO DO" +
                 "\n(0) Sair");
