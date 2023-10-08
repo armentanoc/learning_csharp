@@ -23,7 +23,7 @@ namespace Fundamentals
                 "\n(11) Pay Raise" +
                 "\n(12) Array Sum" +
                 "\n(13) Array Functions" +
-                "\n(14) Option 14" +
+                "\n(14) Sum 1 To 100 Using Array" +
                 "\n(15) Option 15" +
                 "\n(0) Sair");
 
@@ -100,7 +100,8 @@ namespace Fundamentals
                         Main(args);
                         break;
                     case 14:
-                        Console.WriteLine("OPÇÃO 14 - Implement your code here\n");
+                        Console.WriteLine("SOMA DE 1 A 100 USANDO ARRAY\n");
+                        Sum1To100.run();
                         Main(args);
                         break;
                     case 15:
