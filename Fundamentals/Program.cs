@@ -16,7 +16,7 @@ namespace Fundamentals
                 "\n(4) Currency Converter" +
                 "\n(5) Fish Regulation" +
                 "\n(6) Swimmer Categorization" +
-                "\n(7) Sales Management System - TO DO" +
+                "\n(7) Sales Management System" +
                 "\n(8) Review Student Scores - TO DO" +
                 "\n(9) Choose Courses - TO DO" +
                 "\n(10) Palindromes - TO DO" +
@@ -61,7 +61,8 @@ namespace Fundamentals
                         break;
                     case 7:
                         Console.WriteLine("SISTEMA DE GERENCIAMENTO DE VENDAS\n");
-                        SalesManagement.run();
+                        SalesManagement sl = new SalesManagement();
+                        sl.run();
                         Main(args);
                         break;
                     case 8:
