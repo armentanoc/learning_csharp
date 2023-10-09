@@ -1,4 +1,4 @@
-# csharp_solutions
+# C# / .NET Solutions
 
   <p align="center">
     <!--<a href="https://github.com/anuraghazra/github-readme-stats/actions">
