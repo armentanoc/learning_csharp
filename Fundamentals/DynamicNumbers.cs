@@ -35,6 +35,7 @@ namespace Fundamentals
             Console.WriteLine($"Total de números lidos: {totalNumbers}");
             Console.WriteLine($"Soma dos números: {sum}");
             Console.WriteLine($"Quantidade de números pares: {evenNumbersCount}");
+            Console.WriteLine($"Vetor: {string.Join(", ", numbers)}");
         
         }
     }
@@ -47,5 +48,4 @@ EXERCÍCIO 04
 Faça um algoritmo que leia números até o usuário digitar 0, após
 finalizar, mostre quantos números lidos, a soma e quantos são pares.
 
-string.join(',', vetor);
  */
