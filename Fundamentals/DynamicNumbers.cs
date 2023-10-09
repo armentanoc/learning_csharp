@@ -5,7 +5,7 @@ namespace Fundamentals
     {
         public static void run()
         {
-            double[] numbers = new double[100];
+            double[] numbers = new double[1];
             int totalNumbers = 0;
             double sum = 0;
             int evenNumbersCount = 0;
@@ -20,6 +20,7 @@ namespace Fundamentals
                     totalNumbers++;
                     sum += number;
                     evenNumbersCount += (number % 2 == 0) ? 1 : 0;
+                    Array.Resize(ref numbers, totalNumbers+1);
                 }
                 else if (number == 0)
                 {
@@ -46,4 +47,5 @@ EXERCÍCIO 04
 Faça um algoritmo que leia números até o usuário digitar 0, após
 finalizar, mostre quantos números lidos, a soma e quantos são pares.
 
+string.join(',', vetor);
  */
