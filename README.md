@@ -1,4 +1,4 @@
-# learning_csharp
+# csharp_solutions
 
   <p align="center">
     <!--<a href="https://github.com/anuraghazra/github-readme-stats/actions">
