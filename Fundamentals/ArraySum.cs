@@ -11,8 +11,8 @@ namespace Fundamentals
         public static void run()
         {
 
-            int[] vectorA = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-            int[] vectorB = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            int[] vectorA = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] vectorB = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int[] vectorC = new int[10];
 
             for (int i = 0, j = vectorB.Length - 1; i < vectorA.Length; i++, j--)
