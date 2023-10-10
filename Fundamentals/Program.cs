@@ -8,7 +8,7 @@ namespace Fundamentals
         static void Main(string[] args)
         {
 
-            Console.WriteLine("\nLEARNING C#\n" +
+            Console.WriteLine("\n\nLEARNING C#\n" +
                 "\nQual programa você deseja executar?\n" +
                 "\n(1) Simple Calculator" +
                 "\n(2) Age Calculator" +
@@ -25,6 +25,7 @@ namespace Fundamentals
                 "\n(13) Array Functions" +
                 "\n(14) Sum 1 To 100 Using Array" +
                 "\n(15) Dynamic numbers" +
+                "\n(16) Sum interval" +
                 "\n(0) Sair");
 
             try
@@ -107,6 +108,11 @@ namespace Fundamentals
                     case 15:
                         Console.WriteLine("DIGITE OS NÚMEROS QUE DESEJA E VÁ PRESSIONANDO ENTER\n");
                         DynamicNumbers.run();
+                        Main(args);
+                        break;
+                    case 16:
+                        Console.WriteLine("INTERVALO DE SOMA PAR");
+                        SumInterval.run();
                         Main(args);
                         break;
                     case 0:
