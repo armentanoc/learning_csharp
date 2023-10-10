@@ -26,6 +26,7 @@ namespace Fundamentals
                 "\n(14) Sum 1 To 100 Using Array" +
                 "\n(15) Dynamic numbers" +
                 "\n(16) Sum interval" +
+                "\n(17) Fibonacci" +
                 "\n(0) Sair");
 
             try
@@ -113,6 +114,11 @@ namespace Fundamentals
                     case 16:
                         Console.WriteLine("INTERVALO DE SOMA PAR");
                         SumInterval.run();
+                        Main(args);
+                        break;
+                    case 17:
+                        Console.WriteLine("FIBONACCI");
+                        Fibonacci.run();
                         Main(args);
                         break;
                     case 0:
