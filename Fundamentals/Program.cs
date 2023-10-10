@@ -27,6 +27,7 @@ namespace Fundamentals
                 "\n(15) Dynamic numbers" +
                 "\n(16) Sum interval" +
                 "\n(17) Fibonacci" +
+                "\n(18) Secret Number" +
                 "\n(0) Sair");
 
             try
@@ -119,6 +120,11 @@ namespace Fundamentals
                     case 17:
                         Console.WriteLine("FIBONACCI");
                         Fibonacci.run();
+                        Main(args);
+                        break;
+                    case 18:
+                        Console.WriteLine("ADIVINHE O NÚMERO SECRETO");
+                        SecretNumber.run();
                         Main(args);
                         break;
                     case 0:
