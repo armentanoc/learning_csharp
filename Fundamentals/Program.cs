@@ -28,6 +28,7 @@ namespace Fundamentals
                 "\n(16) Sum interval" +
                 "\n(17) Fibonacci" +
                 "\n(18) Secret Number" +
+                "\n(19) Size of Longest Substring Without Repeating Characters" +
                 "\n(0) Sair");
 
             try
@@ -125,6 +126,11 @@ namespace Fundamentals
                     case 18:
                         Console.WriteLine("ADIVINHE O NÚMERO SECRETO");
                         SecretNumber.run();
+                        Main(args);
+                        break;
+                    case 19:
+                        Console.WriteLine("TAMANHO DA SUBSTRING MAIS LONGA SEM REPETIÇÃO");
+                        LongestSubstring.run();
                         Main(args);
                         break;
                     case 0:
