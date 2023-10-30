@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Fundamentals
 {
     class DynamicNumbers
     {
         public static void run()
         {
-            double[] numbers = new double[1];
-            int totalNumbers = 0;
+            List<double> numbers = new List<double>();
             double sum = 0;
             int evenNumbersCount = 0;
 
@@ -14,17 +16,16 @@ namespace Fundamentals
 
             while (true)
             {
-                if (double.TryParse(Console.ReadLine(), out double number) && number != 0)
+                if (double.TryParse(Console.ReadLine(), out double number))
                 {
-                    numbers[totalNumbers] = number;
-                    totalNumbers++;
+                    if (number == 0)
+                    {
+                        break;
+                    }
+
+                    numbers.Add(number);
                     sum += number;
                     evenNumbersCount += (number % 2 == 0) ? 1 : 0;
-                    Array.Resize(ref numbers, totalNumbers+1);
-                }
-                else if (number == 0)
-                {
-                    break;
                 }
                 else
                 {
@@ -32,11 +33,10 @@ namespace Fundamentals
                 }
             }
 
-            Console.WriteLine($"Total de números lidos: {totalNumbers}");
+            Console.WriteLine($"\nTotal de números lidos: {numbers.Count}");
             Console.WriteLine($"Soma dos números: {sum}");
             Console.WriteLine($"Quantidade de números pares: {evenNumbersCount}");
             Console.WriteLine($"Vetor: {string.Join(", ", numbers)}");
-        
         }
     }
 }

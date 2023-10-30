@@ -45,7 +45,6 @@ namespace Fundamentals
                 return whichCurrency(valueReais);
             }
         }
-
     }
 }
 
