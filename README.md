@@ -20,3 +20,5 @@
       <img alt="OpenSSF Scorecard" src="https://api.securityscorecards.dev/projects/github.com/anuraghazra/github-readme-stats/badge" />
     </a>-->
   </p>
+  
+  Problem's solutions using C# and .NET framework.
